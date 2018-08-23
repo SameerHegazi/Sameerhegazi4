@@ -25,7 +25,7 @@ client.on('ready', () => {
     client.user.setStatus("idle")
 });
 
-const prefix = "n"
+const prefix = "aa"
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
 	//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
@@ -263,7 +263,7 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    }
    }); 
 client.on('message', function(message) {
-	const myID = "385447156699627530";
+	const myID = "465271161421430794";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -316,4 +316,4 @@ client.on('message', function(message) {
     }
 });
    
-client.login("NDc3Njk5MTA5NzAxMDI1Nzkz.Dl5brw.rWTn9FFiHV7d8BrtOOAlv9JFs64")
+client.login(process.env.BOT_TOKEN);

@@ -265,7 +265,7 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 client.on('message', function(message) {
 	const myID = "465271161421430794";
     let args = message.content.split(" ").slice(1).join(" ");
-    if(message.content.startsWith(prefix + "setname")) {
+    if(message.content.startsWith(prefix + "setnamebot")) {
 		        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setUsername(args);
